@@ -4,7 +4,9 @@ var jwtSimple = require('jwt-simple');
 var secret = '124446666688888888000000000';
 var PORT = process.env.PORT || 3000;
 var bcrypt = require('bcrypt-nodejs');
+var mongoose = require('mongoose');
 
+mongoose.connect("mongodb://vikashhrs:12345@ds161194.mlab.com:61194/pollkonnect")
 var USER = require('./models/user');
 
 var app  = express();
